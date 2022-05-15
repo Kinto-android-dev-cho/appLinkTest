@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', event => {
             var userAgent = navigator.userAgent; 
             var visitTime = (new Date()).getTime(); 
             if (userAgent.match(/Android/i)) { //Android
-            location.href = 'intent://main_web#Intent;scheme="https://";package="renewal.myroute.app.android.dev"'; 
+            location.href = 'intent://main_web#Intent;scheme=https;package=renewal.myroute.app.android.dev;end'; 
             } else if (userAgent.match(/iPhone/i)) { //iOs
              setTimeout(function() { 
                  if ((new Date()).getTime() - visitTime < 3000) { 
