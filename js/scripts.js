@@ -9,6 +9,8 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    
+    
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -50,5 +52,29 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    const deepLinkItems = [].slice.call(
+        document.querySelectorAll('.deeplink')
+    );
+
+    deepLinkItems.map(function (deepLinkItem) {
+        deepLinkItem.addEventListener('click', () => {
+            var userAgent = navigator.userAgent; 
+            var visitTime = (new Date()).getTime(); 
+            if (userAgent.match(/Android/i)) { //Android
+            location.href = 'intent://main_web#Intent;scheme="https://";package="renewal.myroute.app.android.dev"'; 
+            } else if (userAgent.match(/iPhone/i)) { //iOs
+             setTimeout(function() { 
+                 if ((new Date()).getTime() - visitTime < 3000) { 
+                     location.href = "https://myroute.onelink.me/reBz/hrm4p32z"; 
+                     }
+                 } ,2500);
+                  setTimeout(function() { 
+                      location.href = "https://"; 
+                      } ,0); 
+                }
+        }
+        )
+    })
 
 });
