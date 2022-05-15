@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "renewal.myroute.app.android.dev",
+                 "sha256_cert_fingerprints": ["4E:52:E7:EC:62:9A:07:0D:A1:BE:50:F9:39:BC:B8:2F:53:62:E8:E6:61:6D:FB:7B:B5:E4:90:F2:8F:CD:1C:47"] }
+  }]
