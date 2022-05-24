@@ -23,7 +23,9 @@ window.addEventListener('DOMContentLoaded', event => {
           setTimeout(function() { 
               location.href = "https://"; 
               } ,0); 
-        }
+    } else { //Window PC
+        location.href = 'http://play.google.com/store/apps/details?id=com.google.android.apps.maps'
+    } 
 
     // location.href = "https://yahoo.co.jp"
 
