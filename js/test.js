@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', event => {
     var userAgent = navigator.userAgent; 
     var visitTime = (new Date()).getTime(); 
     if (userAgent.match(/Android/i)) { //Android
-        location.href = 'http://play.google.com/store/apps/details?id=com.google.android.apps.maps'
+        location.href = 'http://play.google.com/store/apps/details?id=jp.co.toyota.myroute'
     } else if (userAgent.match(/iPhone/i)) { //iOs
      setTimeout(function() { 
          if ((new Date()).getTime() - visitTime < 3000) { 
