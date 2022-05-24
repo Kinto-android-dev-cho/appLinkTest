@@ -62,7 +62,8 @@ window.addEventListener('DOMContentLoaded', event => {
             var userAgent = navigator.userAgent; 
             var visitTime = (new Date()).getTime(); 
             if (userAgent.match(/Android/i)) { //Android
-            location.href = 'intent://kinto-android-dev-cho.github.io/appLinkTest/memo/yahoo.co.jp#intent;scheme=https;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=renewal.myroute.app.android.dev;end;'; 
+                location.href = 'myroute://memo_url?url=https://yahoo.co.jp'
+            // location.href = 'intent://kinto-android-dev-cho.github.io/appLinkTest/memo/yahoo.co.jp#intent;scheme=https;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=renewal.myroute.app.android.dev;end;'; 
             } else if (userAgent.match(/iPhone/i)) { //iOs
              setTimeout(function() { 
                  if ((new Date()).getTime() - visitTime < 3000) { 
