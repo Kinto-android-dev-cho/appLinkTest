@@ -9,6 +9,22 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
-    location.href = "https://yahoo.co.jp"
+
+    var userAgent = navigator.userAgent; 
+    var visitTime = (new Date()).getTime(); 
+    if (userAgent.match(/Android/i)) { //Android
+        location.href = 'http://play.google.com/store/apps/details?id=com.google.android.apps.maps'
+    } else if (userAgent.match(/iPhone/i)) { //iOs
+     setTimeout(function() { 
+         if ((new Date()).getTime() - visitTime < 3000) { 
+             location.href = "https://myroute.onelink.me/reBz/hrm4p32z"; 
+             }
+         } ,2500);
+          setTimeout(function() { 
+              location.href = "https://"; 
+              } ,0); 
+        }
+
+    // location.href = "https://yahoo.co.jp"
 
 });
