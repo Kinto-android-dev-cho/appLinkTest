@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', event => {
                  }
              } ,2500);
               setTimeout(function() { 
-                  location.href = "https://"; 
+                  location.href = "https://myroute.onelink.me/reBz/hrm4p32z"; 
                   } ,0); 
         } else { //Window PC
             location.href = 'http://play.google.com/store/apps/details?id=jp.co.toyota.myroute'
